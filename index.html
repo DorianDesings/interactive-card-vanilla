@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="card-preview">
+        <img class="card-back" src="./assets/images/bg-card-back.png" alt="" />
+        <img class="card-front" src="./assets/images/bg-card-front.png" alt="" />
+        <img class="card-logo" src="./assets/images/card-logo.svg" alt="" />
+        <span class="card-number" id="card-number">0000 0000 0000 0000</span>
+        <span class="card-name" id="card-name">JANE APPLESEED</span>
+        <div class="card-date">
+          <span class="card-month" id="card-month">00</span>
+          <span>/</span>
+          <span class="card-year" id="card-year">00</span>
+        </div>
+        <span class="card-cvc" id="card-cvc">000</span>
+      </div>
+
+      <div class="card-form">
+        <form class="form" id="form">
+          <div class="form-field">
+            <label for="input-name" class="form-label">CARDHOLDER NAME</label>
+            <input type="text" id="input-name" name="input-name" class="form-input" placeholder="e.g. Jane Appleseed" />
+          </div>
+          <span id="card-name-error" class="error"></span>
+          <div class="form-field" class="form-label">
+            <label for="input-number" class="form-label">CARD NUMBER</label>
+            <input
+              type="text"
+              id="input-number"
+              name="input-number"
+              class="form-input"
+              placeholder="e.g 1234 5678 9123 0000"
+            />
+          </div>
+          <span id="card-number-error" class="error"></span>
+          <div class="form-last">
+            <div class="form-field">
+              <label class="form-label">EXP. DATE (MM/YY)</label>
+              <input
+                type="text"
+                name="input-month"
+                id="input-month"
+                class="form-input form-input--small"
+                placeholder="MM"
+              />
+              <input
+                type="text"
+                name="input-year"
+                id="input-year"
+                class="form-input form-input--small"
+                placeholder="YY"
+              />
+            </div>
+            <span id="card-date-error" class="error"></span>
+            <div class="form-field">
+              <label for="cvc" class="form-label">CVC</label>
+              <input
+                type="text"
+                id="cvc"
+                name="input-cvc"
+                class="form-input form-input--medium"
+                placeholder="e.g. 123"
+              />
+              <span id="card-cvc-error" class="error"></span>
+            </div>
+          </div>
+          <button class="button">Confirm</button>
+        </form>
+      </div>
+    </main>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
