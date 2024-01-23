@@ -12,9 +12,6 @@
   <body>
     <main class="main">
       <div class="card-preview">
-        <img class="card-back" src="./assets/images/bg-card-back.png" alt="" />
-        <img class="card-front" src="./assets/images/bg-card-front.png" alt="" />
-        <img class="card-logo" src="./assets/images/card-logo.svg" alt="" />
         <span class="card-number" id="card-number">0000 0000 0000 0000</span>
         <span class="card-name" id="card-name">JANE APPLESEED</span>
         <div class="card-date">
@@ -30,8 +27,8 @@
           <div class="form-field">
             <label for="input-name" class="form-label">CARDHOLDER NAME</label>
             <input type="text" id="input-name" name="input-name" class="form-input" placeholder="e.g. Jane Appleseed" />
+            <span id="card-name-error" class="error"></span>
           </div>
-          <span id="card-name-error" class="error"></span>
           <div class="form-field" class="form-label">
             <label for="input-number" class="form-label">CARD NUMBER</label>
             <input
@@ -41,8 +38,8 @@
               class="form-input"
               placeholder="e.g 1234 5678 9123 0000"
             />
+            <span id="card-number-error" class="error"></span>
           </div>
-          <span id="card-number-error" class="error"></span>
           <div class="form-last">
             <div class="form-field">
               <label class="form-label">EXP. DATE (MM/YY)</label>
@@ -60,8 +57,8 @@
                 class="form-input form-input--small"
                 placeholder="YY"
               />
+              <span id="card-date-error" class="error"></span>
             </div>
-            <span id="card-date-error" class="error"></span>
             <div class="form-field">
               <label for="cvc" class="form-label">CVC</label>
               <input

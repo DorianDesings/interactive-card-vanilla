@@ -50,6 +50,10 @@ a {
   left: 16px;
 }
 
+.card-back {
+  left: 73px;
+}
+
 .card-logo {
   width: 54px;
   top: 144px;
@@ -103,6 +107,7 @@ a {
   width: 327px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 1.625rem;
 }
 
 .form-label {
@@ -114,7 +119,7 @@ a {
 }
 
 .form-input {
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.25rem;
   border: 1px solid #dfdee0;
   border-radius: 0.5rem;
   height: 45px;
